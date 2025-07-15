@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>¡Orgullo Nacional: Chomi Triunfó!</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            color: #2c3e50;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            color: #d35400;
+            margin-bottom: 10px;
+        }
+
+        .mensaje {
+            font-size: 1.6em;
+            background: #fff;
+            display: inline-block;
+            padding: 20px 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            margin-bottom: 30px;
+        }
+
+        .grupo-personajes {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 10px;
+            position: relative;
+        }
+
+        .personaje {
+            position: relative;
+        }
+
+        .gru {
+            width: 220px;
+            transform: scaleX(-1) rotate(-3deg);
+            margin-right: -60px; 
+            z-index: 2;
+        }
+
+        .chomi {
+            width: 260px;
+            z-index: 1;
+        }
+
+        .impresora {
+            width: 300px;
+            margin-left: -250px; 
+            transform: rotate(2deg);
+            z-index: 0;
+        }
+
+        .flecha {
+            position: absolute;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-10deg);
+            font-size: 1.3em;
+            color: #c0392b;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .flecha::after {
+            content: "⬇️";
+            display: block;
+            font-size: 2em;
+            margin-top: -5px;
+        }
+
+        .flecha-secundaria {
+            position: absolute;
+            bottom: -40px;
+            left: 0;
+            transform: rotate(-20deg);
+            font-size: 1.2em;
+            color: #27ae60;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .flecha-secundaria::after {
+            content: "⬅️";
+            display: inline-block;
+            font-size: 2em;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡FELICITACIONES, CHOMI!</h1>
+        <div class="mensaje">
+            Mire mamá, <strong>chomi</strong> triunfó<br>
+            todo sea por la <strong>rino</strong> carajo<br>
+        </div>
+
+        <div class="grupo-personajes">
+            
+            <div class="personaje">
+                <img src="img/gru.png" alt="Gru" class="gru">
+            </div>
+
+            <div class="personaje">
+                <div class="flecha">Chomi chambeando</div>
+                <div class="flecha-secundaria">Chambeador del mes</div>
+                <img src="img/image.png" alt="Chomi" class="chomi">
+            </div>
+
+            <div class="personaje">
+                <img src="img/impresora.png" alt="Impresora" class="impresora">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Codirix - Desarrollo Web</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="#" onclick="showPage('inicio')" class="active">Inicio</a></li>
+        <li><a href="#" onclick="showPage('servicios')">Servicios</a></li>
+        <li><a href="#" onclick="showPage('portafolio')">Portafolio</a></li>
+        <li><a href="#" onclick="showPage('nosotros')">Nosotros</a></li>
+        <li><a href="#" onclick="showPage('contacto')">Contacto</a></li>
+        <li><a href="#" onclick="showPage('cotizar')">Cotizar</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div id="inicio" class="page active"></div>
+    <div id="servicios" class="page"></div>
+    <div id="portafolio" class="page"></div>
+    <div id="nosotros" class="page"></div>
+    <div id="contacto" class="page"></div>
+    <div id="cotizar" class="page"></div>
+  </div>
+
+  <footer>
+    <p>© 2025 Codirix. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
